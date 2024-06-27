@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 30px;
+    height: 30px;
+ }
+ 
+ .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: transform 0.2s ease-in-out;
+ }
+ 
+ .menu.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+ }
+ 
+ .menu.open .bar:nth-child(2) {
+    opacity: 0;
+ }
+ 
+ .menu.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+ }
+ 
